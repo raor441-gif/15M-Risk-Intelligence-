@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_dashboard" name="shell-type"/>
+<title>Sourcing Champions · 15M Risk Intelligence Hub</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(16, 27, 51, 0.02);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(16, 27, 51, 0.15);
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(16, 27, 51, 0.3);
+      }
+    }
+    .mesh-background {
+      background-color: #F5F8FC;
+      background-image: 
+        radial-gradient(at 15% 10%, rgba(25, 182, 164, 0.05) 0px, transparent 45%),
+        radial-gradient(at 85% 18%, rgba(23, 107, 206, 0.06) 0px, transparent 50%),
+        radial-gradient(at 50% 75%, rgba(25, 182, 164, 0.04) 0px, transparent 60%),
+        linear-gradient(rgba(226, 232, 240, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+    }
+  </style>
+</head>
+<body class="mesh-background text-[#101B33] antialiased selection:bg-[#19B6A4]/20 selection:text-[#101B33]">
+<!-- Midnight Navy Sidebar (#101B33) with osapiens precision styling -->
+<aside class="fixed left-0 top-0 h-screen w-64 bg-[#101B33] z-50 flex flex-col justify-between select-none shadow-[2px_0_20px_rgba(16,27,51,0.18)] border-r border-[#1C2C4E]">
+<div class="flex flex-col h-full overflow-hidden">
+<!-- Sidebar Header / Logo -->
+<div class="p-5 border-b border-[#1C2C4E]/80 bg-[#0C1527]/60">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#176BCE] to-[#19B6A4] flex items-center justify-center p-0.5 shadow-md shadow-[#19B6A4]/15">
+<div class="w-full h-full bg-[#101B33] rounded-[7px] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#19B6A4] text-[20px]">hub</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-white tracking-tight text-[15px] leading-tight">Sourcing Champions</span>
+<span class="font-mono text-[10px] text-[#19B6A4] tracking-wider uppercase font-semibold">15M Intelligence</span>
+</div>
+</div>
+<div class="mt-3.5 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#176BCE]/20 text-[#60A5FA] border border-[#176BCE]/30 text-[10px] uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#19B6A4] animate-pulse"></span>
+            Risk Hub Pro
+          </span>
+<span class="font-mono text-[10px] text-slate-400 font-medium">v4.2 PRO</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 overflow-y-auto px-3 py-3 space-y-4">
+<!-- Executive -->
+<div class="space-y-1">
+<div class="px-3 py-1 font-mono text-[10px] uppercase text-slate-400 tracking-widest font-semibold">Executive</div>
+<a aria-current="page" class="group relative flex items-center gap-3 px-3 py-2 rounded-lg bg-gradient-to-r from-[#176BCE] to-[#145CB2] text-white font-medium text-[13px] shadow-sm shadow-[#176BCE]/30" href="#">
+<span class="absolute left-0 top-1.5 bottom-1.5 w-1 rounded-r bg-[#19B6A4]"></span>
+<span class="material-symbols-outlined text-[18px] text-white">space_dashboard</span>
+<span>Overview</span>
+<span class="ml-auto w-1.5 h-1.5 rounded-full bg-[#19B6A4] shadow-[0_0_8px_#19B6A4]"></span>
+</a>
+</div>
+<!-- 15M Methodology -->
+<div class="space-y-1">
+<div class="px-3 py-1 font-mono text-[10px] uppercase text-slate-400 tracking-widest font-semibold">15M Methodology</div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400 group-hover:text-white">grid_view</span>
+<span>Risk Map</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">radar</span>
+<span>15M Risk Radar</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">hub</span>
+<span>Resilience</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">emergency_heat</span>
+<span>Crisis Readiness</span>
+</a>
+</div>
+<!-- Supply Base & Inventory -->
+<div class="space-y-1">
+<div class="px-3 py-1 font-mono text-[10px] uppercase text-slate-400 tracking-widest font-semibold">Supply Base &amp; Inventory</div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">corporate_fare</span>
+<span>Suppliers</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">inventory_2</span>
+<span>Materials</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">category</span>
+<span>Categories</span>
+</a>
+</div>
+<!-- Decision & Governance -->
+<div class="space-y-1">
+<div class="px-3 py-1 font-mono text-[10px] uppercase text-slate-400 tracking-widest font-semibold">Decision &amp; Governance</div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">payments</span>
+<span>Financial Exposure</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">task_alt</span>
+<span>Action Centre</span>
+<span class="ml-auto px-1.5 py-0.2 rounded-full bg-[#EF4444]/20 border border-[#EF4444]/30 text-[#FCA5A5] font-mono text-[10px] font-bold">3</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">history_edu</span>
+<span>Reports &amp; Audit</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all text-[13px] font-normal" href="#">
+<span class="material-symbols-outlined text-[18px] text-slate-400">tune</span>
+<span>Governance &amp; System</span>
+</a>
+</div>
+</nav>
+<!-- Sidebar Footer Telemetry -->
+<div class="p-3 border-t border-[#1C2C4E]/80 bg-[#0C1527]/80">
+<div class="flex items-center justify-between rounded-lg bg-white/[0.04] p-2.5 border border-white/[0.06]">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#19B6A4] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-[#19B6A4]"></span>
+</span>
+<span class="font-mono text-[11px] text-slate-300 font-medium">Engine 100%</span>
+</div>
+<span class="font-mono text-[10px] text-[#19B6A4] font-semibold bg-[#19B6A4]/10 px-1.5 py-0.5 rounded border border-[#19B6A4]/20">EU-CENTRAL</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Wrapper -->
+<div class="pl-64">
+<!-- Header Strip -->
+<header class="fixed top-0 left-64 right-0 h-16 bg-white/90 backdrop-blur-md z-40 border-b border-[#E0E7F1] shadow-[0_1px_10px_rgba(16,27,51,0.03)]">
+<div class="w-full h-16 px-6 flex items-center justify-between gap-4">
+<!-- Search + Environment Indicator -->
+<div class="flex items-center gap-4 flex-1 max-w-2xl">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-slate-400">search</span>
+<input class="w-full h-9 pl-9 pr-12 bg-[#F5F8FC] border border-[#E0E7F1] rounded-lg text-[13px] text-[#101B33] placeholder:text-slate-400 focus:outline-none focus:bg-white focus:border-[#176BCE] focus:ring-2 focus:ring-[#176BCE]/15 transition-all" placeholder="Search suppliers, materials, risks, categories..." type="text"/>
+<span class="absolute right-2.5 top-2 px-1.5 py-0.5 rounded bg-white border border-[#E0E7F1] font-mono text-[10px] text-slate-500 font-semibold shadow-xs">⌘K</span>
+</div>
+<div class="hidden xl:flex items-center gap-2 px-2.5 py-1 rounded-full bg-[#EAF3FC] text-[#176BCE] text-[11px] font-medium border border-[#D0E2FA]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#19B6A4]"></span>
+<span>15M Framework v4.2 · Synthetic Enterprise Model</span>
+</div>
+</div>
+<!-- Telemetry + Actions + CPO Profile -->
+<div class="flex items-center gap-3">
+<!-- Real-Time osapiens Signal Badge -->
+<div class="hidden 2xl:flex items-center gap-2 px-2.5 py-1 rounded-lg bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[16px] text-[#DC2626] animate-pulse">warning</span>
+<span>osapiens Signal: 2 High Alert Signals (last 4h)</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 h-8 px-3.5 rounded-lg bg-[#176BCE] hover:bg-[#1357A6] text-white text-[12px] font-semibold transition-colors shadow-sm shadow-[#176BCE]/20" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Record Risk</span>
+</button>
+<button class="inline-flex items-center gap-1.5 h-8 px-3.5 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-[#101B33] text-[12px] font-semibold transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px] text-slate-500">ios_share</span>
+<span>Export Briefing</span>
+</button>
+</div>
+<div class="h-6 w-px bg-[#E0E7F1]"></div>
+<!-- Notification Bell -->
+<div class="relative flex items-center justify-center w-8 h-8 rounded-lg hover:bg-[#EAF3FC] cursor-pointer text-slate-600 transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-1 right-1 w-4 h-4 bg-[#EF4444] text-white rounded-full flex items-center justify-center font-mono text-[9px] font-bold ring-2 ring-white">3</span>
+</div>
+<!-- Profile -->
+<div class="flex items-center gap-2.5 pl-1">
+<img alt="Elena Rostova" class="w-8 h-8 rounded-full object-cover ring-2 ring-[#176BCE]/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMCyB1AOUFTDFjpywGWeBdzhWhjeCgQVtRntQYOhUdFTKk9L6TV5LsHKsd95UbHZV3uBe-lALVMlycMqs7110PaPBStAfcQuGlRQVDHckN-5cr-r9eCl6WNUIuH1QsJxuD5A9HM4NH_tP7mPh6TGl2MTTCi3Xf_aDPmsOm6BMUBSP1S1n_iy3glcUoRjBB8HeqtJlhqGuNC5f6hSOZhapgDJhk4rPCfVavhK2r8ogSRLfpgjDHOS4"/>
+<div class="hidden lg:flex flex-col text-left">
+<div class="flex items-center gap-1.5">
+<span class="text-[12px] text-[#101B33] font-semibold leading-tight">Elena Rostova</span>
+<span class="px-1 py-0.2 rounded bg-[#EAF3FC] text-[#176BCE] font-mono text-[9px] font-bold uppercase tracking-wider">Enterprise</span>
+</div>
+<span class="text-[11px] text-slate-500 leading-tight">Chief Procurement Officer</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Container -->
+<main class="relative pt-16 min-h-screen">
+<div class="flex flex-col w-full pb-10">
+<!-- System Status & Executive Header Strip -->
+<section class="px-6 pt-4 pb-2 flex flex-wrap items-center justify-between gap-3">
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-[#E0E7F1] shadow-[0_2px_8px_rgba(16,27,51,0.03)] text-[12px]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#19B6A4] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-[#19B6A4]"></span>
+</span>
+<span class="font-medium text-[#101B33]">osapiens Telemetry Live</span>
+<span class="text-slate-300">/</span>
+<span class="text-slate-500 font-mono text-[11px]">Feed: 4m ago</span>
+<span class="text-slate-300">·</span>
+<span class="text-slate-500 font-mono text-[11px]">SAP ERP: 1h ago</span>
+</div>
+<div class="hidden md:flex items-center gap-1.5 text-slate-600 text-[12px] font-medium bg-white px-3 py-1.5 rounded-lg border border-[#E0E7F1]">
+<span class="material-symbols-outlined text-[16px] text-[#176BCE]">verified_user</span>
+<span>15M Risk Taxonomy v4.2 Evaluated</span>
+</div>
+</div>
+<!-- Timeframe & Sensitivity Toggle -->
+<div class="flex items-center gap-2">
+<div class="inline-flex p-1 rounded-lg bg-white border border-[#E0E7F1] shadow-xs text-[12px]">
+<button class="px-3 py-1 rounded-md bg-[#176BCE] text-white font-semibold shadow-xs transition-all" type="button">Q3 2024</button>
+<button class="px-3 py-1 text-slate-600 hover:text-[#101B33] font-medium transition-colors" type="button">TTM Projected</button>
+<button class="px-3 py-1 text-slate-600 hover:text-[#101B33] font-medium transition-colors" type="button">Stress Case (95% CI)</button>
+</div>
+<button class="flex items-center gap-1.5 h-8 px-3 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-slate-700 text-[12px] font-medium transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-[15px] text-[#176BCE]">tune</span>
+<span>Calibrate Weights</span>
+</button>
+</div>
+</section>
+<!-- Section 1: Executive KPI Strip -->
+<section class="px-6 py-2">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3.5">
+<!-- Metric 1: Critical Risks -->
+<div class="group relative bg-white rounded-xl p-4 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] hover:border-[#EF4444]/40 hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="text-[11px] font-mono font-semibold text-slate-500 uppercase tracking-wider">Critical Exposure</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] text-[10px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444] animate-ping"></span>
+                  2 OSAPIENS
+                </span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-[28px] font-extrabold text-[#DC2626] tracking-tight leading-none">4</span>
+<span class="text-[12px] text-slate-500 font-medium">of 113 monitored</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span class="font-medium text-slate-600">12 High · 29 Med · 68 Low</span>
+<span class="material-symbols-outlined text-[15px] text-slate-400 group-hover:text-[#176BCE] transition-colors cursor-help">info</span>
+</div>
+<!-- Tooltip -->
+<div class="absolute left-2 right-2 bottom-full mb-2 hidden group-hover:flex flex-col p-2.5 bg-[#101B33] text-white rounded-lg shadow-xl z-20 pointer-events-none text-[11px] leading-relaxed border border-[#1C2C4E]">
+<span class="font-semibold text-[#19B6A4] font-mono text-[9px] uppercase tracking-wider mb-1">Risk Definition</span>
+                Risks with compound score ≥ 20 requiring executive board visibility within 24h. Includes active regulatory &amp; raw material quota embargoes.
+              </div>
+</div>
+<!-- Metric 2: Financial Revenue at Risk -->
+<div class="group relative bg-white rounded-xl p-4 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] hover:border-[#176BCE]/40 hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="text-[11px] font-mono font-semibold text-slate-500 uppercase tracking-wider">Revenue at Risk</span>
+<span class="px-1.5 py-0.5 rounded-full bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] text-[10px] font-bold">Stop-Ship Est.</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-[28px] font-extrabold text-[#101B33] tracking-tight leading-none">€112.5M</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Spend: <strong class="text-[#101B33] font-semibold">€48.2M</strong> · CM: <strong class="text-[#101B33] font-semibold">€24.8M</strong></span>
+<span class="material-symbols-outlined text-[15px] text-slate-400 group-hover:text-[#176BCE] transition-colors cursor-help">info</span>
+</div>
+<!-- Tooltip -->
+<div class="absolute left-2 right-2 bottom-full mb-2 hidden group-hover:flex flex-col p-2.5 bg-[#101B33] text-white rounded-lg shadow-xl z-20 pointer-events-none text-[11px] leading-relaxed border border-[#1C2C4E]">
+<span class="font-semibold text-[#19B6A4] font-mono text-[9px] uppercase tracking-wider mb-1">Financial Impact Model</span>
+                Direct gross revenue of bill-of-materials halted if supplier lead-time buffer reaches zero. Contribution Margin at risk is €24.8M.
+              </div>
+</div>
+<!-- Metric 3: Concentrated Tier 1 Base -->
+<div class="group relative bg-white rounded-xl p-4 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] hover:border-[#F59E0B]/40 hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="text-[11px] font-mono font-semibold text-slate-500 uppercase tracking-wider">Concentration Index</span>
+<span class="px-1.5 py-0.5 rounded-full bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] text-[10px] font-bold">1.4% base</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-[28px] font-extrabold text-[#101B33] tracking-tight leading-none">6</span>
+<span class="text-[12px] text-slate-500 font-medium">High-Risk Suppliers</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Holds <strong class="text-[#DC2626] font-semibold">18.2%</strong> strategic spend</span>
+<span class="material-symbols-outlined text-[15px] text-slate-400 group-hover:text-[#176BCE] transition-colors cursor-help">info</span>
+</div>
+<!-- Tooltip -->
+<div class="absolute left-2 right-2 bottom-full mb-2 hidden group-hover:flex flex-col p-2.5 bg-[#101B33] text-white rounded-lg shadow-xl z-20 pointer-events-none text-[11px] leading-relaxed border border-[#1C2C4E]">
+<span class="font-semibold text-[#19B6A4] font-mono text-[9px] uppercase tracking-wider mb-1">Supply Dependency</span>
+                6 of 420 Tier-1 suppliers maintain single-source leverage on critical components with no immediate secondary vendor ready.
+              </div>
+</div>
+<!-- Metric 4: Single-Source Bottlenecks -->
+<div class="group relative bg-white rounded-xl p-4 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] hover:border-[#EF4444]/40 hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="text-[11px] font-mono font-semibold text-slate-500 uppercase tracking-wider">Single-Source Moats</span>
+<span class="px-1.5 py-0.5 rounded-full bg-[#FEF2F2] text-[#DC2626] border border-[#FEE2E2] text-[10px] font-bold">&lt; 6w Buffer</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-[28px] font-extrabold text-[#DC2626] tracking-tight leading-none">14</span>
+<span class="text-[12px] text-slate-500 font-medium">Critical Materials</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>&gt; 26w requalification gap</span>
+<span class="material-symbols-outlined text-[15px] text-slate-400 group-hover:text-[#176BCE] transition-colors cursor-help">info</span>
+</div>
+<!-- Tooltip -->
+<div class="absolute left-2 right-2 bottom-full mb-2 hidden group-hover:flex flex-col p-2.5 bg-[#101B33] text-white rounded-lg shadow-xl z-20 pointer-events-none text-[11px] leading-relaxed border border-[#1C2C4E]">
+<span class="font-semibold text-[#19B6A4] font-mono text-[9px] uppercase tracking-wider mb-1">Time-to-Survive (TTS)</span>
+                Inventory runs dry within 42 days while alternate production line validation requires minimum 182 days.
+              </div>
+</div>
+<!-- Metric 5: Resilience Score & Readiness -->
+<div class="group relative bg-white rounded-xl p-4 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] hover:border-[#19B6A4]/40 hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="text-[11px] font-mono font-semibold text-slate-500 uppercase tracking-wider">Resilience Index</span>
+<span class="inline-flex items-center gap-0.5 text-[#006B5F] bg-[#E6F8F5] border border-[#B4F0E6] px-1.5 py-0.5 rounded-full text-[10px] font-bold">
+<span class="material-symbols-outlined text-[13px] text-[#19B6A4]">trending_up</span>+4 QoQ
+                </span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-[28px] font-extrabold text-[#176BCE] tracking-tight leading-none">64</span>
+<span class="text-[12px] text-slate-500 font-medium">/ 100</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Readiness: <strong class="text-[#101B33] font-semibold">72/100</strong> · -14% Risk</span>
+<span class="material-symbols-outlined text-[15px] text-slate-400 group-hover:text-[#176BCE] transition-colors cursor-help">info</span>
+</div>
+<!-- Tooltip -->
+<div class="absolute left-2 right-2 bottom-full mb-2 hidden group-hover:flex flex-col p-2.5 bg-[#101B33] text-white rounded-lg shadow-xl z-20 pointer-events-none text-[11px] leading-relaxed border border-[#1C2C4E]">
+<span class="font-semibold text-[#19B6A4] font-mono text-[9px] uppercase tracking-wider mb-1">Enterprise Readiness</span>
+                Dynamic multi-attribute model measuring inventory elasticity, dual-sourcing velocity, and emergency contingency protocols.
+              </div>
+</div>
+</div>
+</section>
+<!-- Section 2: Two-Column Primary Analytics Grid -->
+<section class="px-6 py-2 grid grid-cols-1 lg:grid-cols-12 gap-4">
+<!-- LEFT: Interactive 5x5 Likelihood vs Impact Matrix (7 Cols) -->
+<div class="lg:col-span-7 bg-white rounded-xl p-5 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-3">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-[16px] font-bold text-[#101B33]">15M Risk Matrix</h3>
+<span class="px-2 py-0.5 rounded-md bg-[#EAF3FC] font-mono text-[10px] text-[#176BCE] font-bold border border-[#D0E2FA]">5×5 EVALUATION</span>
+</div>
+<p class="text-[12px] text-slate-500 mt-0.5">Likelihood vs. Severity index with automated osapiens real-time incident mapping</p>
+</div>
+<!-- Filter by 15M Dimension -->
+<div class="flex items-center gap-1 bg-[#F5F8FC] p-1 rounded-lg border border-[#E0E7F1]">
+<button class="px-2.5 py-0.5 rounded-md bg-[#176BCE] text-[11px] font-semibold text-white shadow-xs" type="button">All Levels</button>
+<button class="px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 hover:text-[#101B33] hover:bg-white transition-colors" type="button">Framework</button>
+<button class="px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 hover:text-[#101B33] hover:bg-white transition-colors" type="button">Categories</button>
+<button class="px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 hover:text-[#101B33] hover:bg-white transition-colors" type="button">Suppliers</button>
+<button class="px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 hover:text-[#101B33] hover:bg-white transition-colors" type="button">Processes</button>
+</div>
+</div>
+<!-- 5x5 Grid Visualization -->
+<div class="mt-4 grid grid-cols-12 gap-2 items-center">
+<!-- Y-Axis Label -->
+<div class="col-span-1 flex flex-col items-center justify-between h-72 py-3">
+<span class="text-[9px] uppercase font-bold tracking-widest text-slate-400 [writing-mode:vertical-rl] rotate-180">Likelihood (1–5)</span>
+<div class="flex flex-col justify-between h-full py-1 text-right font-mono text-[11px] text-slate-400 font-medium">
+<span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+</div>
+</div>
+<!-- Heatmap Canvas -->
+<div class="col-span-11 flex flex-col">
+<div class="grid grid-cols-5 gap-1.5 h-72">
+<!-- Row 5 (Likelihood 5) -->
+<div class="bg-[#FEF3C7]/60 border border-[#FDE68A] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-amber-800 font-semibold">5</span>
+</div>
+<div class="bg-[#FED7AA]/60 border border-[#FDBA74] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-amber-900 font-semibold">10</span>
+</div>
+<div class="bg-[#FDBA74]/70 border border-[#FB923C] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-orange-950 font-semibold">15</span>
+</div>
+<!-- R-108 Sundara Rare Earth -->
+<div class="bg-gradient-to-br from-[#EF4444] to-[#DC2626] rounded-lg flex flex-col items-center justify-center p-1 shadow-sm ring-2 ring-[#EF4444]/40 relative group cursor-pointer transition-transform hover:scale-[1.03]">
+<span class="px-1.5 py-0.5 bg-[#101B33] text-white rounded font-mono text-[9px] font-bold">R-188</span>
+<span class="font-mono text-[9px] text-white font-medium truncate w-full text-center mt-0.5">Sundara</span>
+<!-- Live Signal Dot -->
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#19B6A4] ring-2 ring-white"></span>
+</div>
+<!-- R-101 Nordvolt Geopolitical -->
+<div class="bg-gradient-to-br from-[#DC2626] to-[#B91C1C] rounded-lg flex flex-col items-center justify-center p-1 shadow-md ring-2 ring-[#EF4444] relative group cursor-pointer transition-transform hover:scale-[1.03]">
+<span class="px-1.5 py-0.5 bg-[#101B33] text-[#19B6A4] rounded font-mono text-[9px] font-bold">R-101</span>
+<span class="font-mono text-[9px] text-white font-bold truncate w-full text-center mt-0.5">Nordvolt</span>
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#EF4444] ring-2 ring-white animate-ping"></span>
+</div>
+<!-- Row 4 (Likelihood 4) -->
+<div class="bg-[#D1FAE5]/60 border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-emerald-800 font-semibold">4</span>
+</div>
+<div class="bg-[#FEF3C7]/70 border border-[#FDE68A] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-amber-800 font-semibold">8</span>
+</div>
+<div class="bg-[#FED7AA]/70 border border-[#FDBA74] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-orange-900 font-semibold">12</span>
+</div>
+<!-- R-104 Hexaprime cleanroom alert -->
+<div class="bg-gradient-to-br from-[#EF4444] to-[#DC2626] rounded-lg flex flex-col items-center justify-center p-1 shadow-sm ring-1 ring-[#EF4444] cursor-pointer hover:scale-[1.03] transition-transform">
+<span class="px-1.5 py-0.5 bg-[#101B33] text-white rounded font-mono text-[9px] font-bold">R-104</span>
+<span class="font-mono text-[9px] text-white font-medium truncate w-full text-center mt-0.5">Hexaprime</span>
+</div>
+<!-- R-112 Castellan Polymer Insolvency -->
+<div class="bg-gradient-to-br from-[#EF4444] to-[#DC2626] rounded-lg flex flex-col items-center justify-center p-1 shadow-sm ring-1 ring-[#EF4444] cursor-pointer hover:scale-[1.03] transition-transform">
+<span class="px-1.5 py-0.5 bg-[#101B33] text-white rounded font-mono text-[9px] font-bold">R-112</span>
+<span class="font-mono text-[9px] text-white font-medium truncate w-full text-center mt-0.5">Castellan</span>
+</div>
+<!-- Row 3 (Likelihood 3) -->
+<div class="bg-[#ECFDF5] border border-[#D1FAE5] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-emerald-800 font-semibold">3</span>
+</div>
+<div class="bg-[#D1FAE5]/70 border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-emerald-800 font-semibold">6</span>
+</div>
+<div class="bg-[#FEF3C7] border border-[#FDE68A] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#F59E0B] text-white rounded font-mono text-[9px] font-bold">4 risks</span>
+</div>
+<div class="bg-[#FED7AA] border border-[#FDBA74] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#F97316] text-white rounded font-mono text-[9px] font-bold">3 risks</span>
+</div>
+<div class="bg-[#FECDD3] border border-[#FDA4AF] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#EF4444] text-white rounded font-mono text-[9px] font-bold">2 risks</span>
+</div>
+<!-- Row 2 (Likelihood 2) -->
+<div class="bg-[#F0FDF4] border border-[#DCFCE7] rounded-lg flex items-center justify-center p-1">
+<span class="font-mono text-[10px] text-emerald-800 font-medium">2</span>
+</div>
+<div class="bg-[#D1FAE5]/60 border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#10B981] text-white rounded font-mono text-[9px] font-medium">14 risks</span>
+</div>
+<div class="bg-[#D1FAE5] border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#059669] text-white rounded font-mono text-[9px] font-medium">9 risks</span>
+</div>
+<div class="bg-[#FEF3C7] border border-[#FDE68A] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#D97706] text-white rounded font-mono text-[9px] font-medium">6 risks</span>
+</div>
+<div class="bg-[#FED7AA] border border-[#FDBA74] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#EA580C] text-white rounded font-mono text-[9px] font-medium">1 risk</span>
+</div>
+<!-- Row 1 (Likelihood 1) -->
+<div class="bg-[#F0FDF4] border border-[#DCFCE7] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#10B981] text-white rounded font-mono text-[9px] font-medium">28 risks</span>
+</div>
+<div class="bg-[#D1FAE5]/60 border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#059669] text-white rounded font-mono text-[9px] font-medium">18 risks</span>
+</div>
+<div class="bg-[#D1FAE5] border border-[#A7F3D0] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#047857] text-white rounded font-mono text-[9px] font-medium">7 risks</span>
+</div>
+<div class="bg-[#FEF3C7] border border-[#FDE68A] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#D97706] text-white rounded font-mono text-[9px] font-medium">3 risks</span>
+</div>
+<div class="bg-[#FED7AA] border border-[#FDBA74] rounded-lg flex items-center justify-center p-1">
+<span class="px-1.5 py-0.5 bg-[#C2410C] text-white rounded font-mono text-[9px] font-medium">1 risk</span>
+</div>
+</div>
+<!-- X-Axis Label -->
+<div class="grid grid-cols-5 text-center mt-2 font-mono text-[11px] text-slate-400">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+</div>
+<div class="text-center text-[10px] uppercase font-bold tracking-widest text-slate-400 mt-1">
+                    Business Severity / Financial Impact (1–5)
+                  </div>
+</div>
+</div>
+</div>
+<!-- Live Critical Callout Strip -->
+<div class="mt-4 pt-3 border-t border-[#E0E7F1] flex flex-col md:flex-row items-start md:items-center justify-between gap-3 bg-[#F8FAFD] p-2.5 rounded-lg border border-[#E2E8F0]">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-6 h-6 rounded-full bg-[#FEF2F2] border border-[#FEE2E2] flex items-center justify-center text-[#DC2626] shrink-0">
+<span class="material-symbols-outlined text-[15px]">crisis_alert</span>
+</span>
+<div class="truncate text-[12px]">
+<span class="font-mono text-[10px] font-bold text-[#DC2626] uppercase">Top Critical Anchor:</span>
+<span class="font-bold text-[#101B33] ml-1">R-101 Nordvolt Cells AB</span>
+<span class="text-slate-500">· Export Quota Restrictions (€48.2M Revenue Line halted)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 text-[#176BCE] hover:text-[#1357A6] text-[11px] font-bold shrink-0 transition-colors" type="button">
+<span>Drilldown File</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- RIGHT: 15M Risk Radar Snapshot Across 9 Tier-1 Domains (5 Cols) -->
+<div class="lg:col-span-5 bg-white rounded-xl p-5 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-[16px] font-bold text-[#101B33]">15M Risk Radar</h3>
+<span class="px-2 py-0.5 rounded-md bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] font-mono text-[10px] font-bold">9 DOMAINS</span>
+</div>
+<p class="text-[12px] text-slate-500 mt-0.5">Weighted composite risk posture across procurement dimensions</p>
+</div>
+<span class="text-[11px] font-mono font-semibold text-slate-500 bg-[#F5F8FC] border border-[#E0E7F1] px-2 py-1 rounded-md">Target: &lt; 35.0</span>
+</div>
+<!-- SVG Radar Chart with Modern Precision Aesthetics -->
+<div class="relative w-full aspect-[4/3] flex items-center justify-center my-2">
+<svg aria-label="15M Radar Chart" class="w-full h-full max-h-64" viewbox="0 0 320 280">
+<defs>
+<radialgradient cx="50%" cy="50%" id="radarGlow" r="50%">
+<stop offset="0%" stop-color="#176BCE" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#19B6A4" stop-opacity="0.02"></stop>
+</radialgradient>
+</defs>
+<!-- Concentric polygons -->
+<polygon fill="none" points="160,30 245,65 275,150 225,230 160,250 95,230 45,150 75,65" stroke="#CBD5E1" stroke-dasharray="3 3" stroke-width="1"></polygon>
+<polygon fill="none" points="160,65 218,90 238,150 203,205 160,220 117,205 82,150 102,90" stroke="#E2E8F0" stroke-width="1"></polygon>
+<polygon fill="none" points="160,105 190,120 200,150 180,180 160,190 140,180 120,150 130,120" stroke="#E2E8F0" stroke-width="1"></polygon>
+<!-- Axis lines -->
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="160" y1="150" y2="30"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="245" y1="150" y2="65"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="275" y1="150" y2="150"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="225" y1="150" y2="230"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="160" y1="150" y2="250"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="95" y1="150" y2="230"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="45" y1="150" y2="150"></line>
+<line stroke="#E2E8F0" stroke-width="1" x1="160" x2="75" y1="150" y2="65"></line>
+<!-- Benchmark Target Zone (Safe Threshold) -->
+<polygon fill="#19B6A4" fill-opacity="0.08" points="160,105 190,120 200,150 180,180 160,190 140,180 120,150 130,120" stroke="#19B6A4" stroke-dasharray="2 2" stroke-width="1"></polygon>
+<!-- Actual Risk Perimeter (Shape) -->
+<polygon fill="url(#radarGlow)" points="160,42 238,78 268,150 190,210 160,205 105,215 50,150 82,75" stroke="#176BCE" stroke-width="2.2"></polygon>
+<!-- Highlighted critical nodes -->
+<circle cx="160" cy="42" fill="#DC2626" r="5" stroke="#FFFFFF" stroke-width="2"></circle>
+<circle cx="268" cy="150" fill="#DC2626" r="5" stroke="#FFFFFF" stroke-width="2"></circle>
+<circle cx="50" cy="150" fill="#F59E0B" r="4" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<circle cx="238" cy="78" fill="#F59E0B" r="4" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<circle cx="82" cy="75" fill="#176BCE" r="3.5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<circle cx="190" cy="210" fill="#176BCE" r="3.5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<circle cx="160" cy="205" fill="#10B981" r="3.5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<circle cx="105" cy="215" fill="#10B981" r="3.5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<!-- Labels with updated taxonomy & osapiens styling -->
+<text class="text-[9px] font-bold fill-[#DC2626] font-mono" text-anchor="middle" x="160" y="20">SUPPLY (78.4)</text>
+<text class="text-[9px] font-semibold fill-slate-700 font-mono" text-anchor="start" x="254" y="60">COST (62.1)</text>
+<text class="text-[9px] font-bold fill-[#DC2626] font-mono" text-anchor="start" x="282" y="153">DEPENDENCY (84.2)</text>
+<text class="text-[9px] font-semibold fill-slate-600 font-mono" text-anchor="start" x="234" y="244">FINANCIAL (44.0)</text>
+<text class="text-[9px] font-semibold fill-[#006B5F] font-mono" text-anchor="middle" x="160" y="266">SUSTAIN/COMPL (38.5)</text>
+<text class="text-[9px] font-semibold fill-slate-600 font-mono" text-anchor="end" x="82" y="244">PERFORMANCE (31.2)</text>
+<text class="text-[9px] font-bold fill-[#D97706] font-mono" text-anchor="end" x="36" y="153">QUALITY (66.8)</text>
+<text class="text-[9px] font-semibold fill-slate-600 font-mono" text-anchor="end" x="66" y="60">KNOW-HOW (29.0)</text>
+</svg>
+</div>
+</div>
+<!-- Category Heat Distribution Legend -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-[#E0E7F1]">
+<div class="p-2 rounded-lg bg-[#FEF2F2] border border-[#FEE2E2] flex flex-col">
+<span class="font-mono text-[9px] text-[#DC2626] font-bold uppercase">Severe Exposure</span>
+<span class="text-[12px] text-[#101B33] font-bold leading-snug">Dependency &amp; Supply</span>
+<span class="font-mono text-[10px] text-slate-500 mt-0.5">Single-source bottlenecks</span>
+</div>
+<div class="p-2 rounded-lg bg-[#FFFBEB] border border-[#FEF3C7] flex flex-col">
+<span class="font-mono text-[9px] text-[#D97706] font-bold uppercase">Moderate Stress</span>
+<span class="text-[12px] text-[#101B33] font-bold leading-snug">Cost &amp; Quality</span>
+<span class="font-mono text-[10px] text-slate-500 mt-0.5">Inflationary volatility</span>
+</div>
+<div class="p-2 rounded-lg bg-[#ECFDF5] border border-[#D1FAE5] flex flex-col">
+<span class="font-mono text-[9px] text-[#059669] font-bold uppercase">Controlled</span>
+<span class="text-[12px] text-[#101B33] font-bold leading-snug">ESG &amp; Innovation</span>
+<span class="font-mono text-[10px] text-slate-500 mt-0.5">Compliant to EU CSRD</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: CPO Urgent Decision Queue -->
+<section class="px-6 py-2">
+<div class="bg-white rounded-xl p-5 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)]">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] flex items-center justify-center font-bold shadow-xs">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-[16px] font-bold text-[#101B33]">Priority Decision Queue</h3>
+<span class="px-2 py-0.5 rounded-full bg-[#EF4444] text-white font-mono text-[10px] font-bold">3 CPO Actions Pending</span>
+</div>
+<p class="text-[12px] text-slate-500">Decisions holding critical stop-ship paths across key production lines</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono text-[11px] text-slate-500 bg-[#F5F8FC] border border-[#E0E7F1] px-3 py-1.5 rounded-lg">Pipeline: 8 Open · 2 Overdue · 1 Blocked · 19 Completed QoQ</span>
+</div>
+</div>
+<!-- Action Cards Stack -->
+<div class="space-y-3">
+<!-- Decision 1 -->
+<div class="p-4 rounded-xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#176BCE]/50 transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 max-w-3xl">
+<span class="w-1.5 self-stretch rounded-full bg-[#DC2626] shrink-0"></span>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] font-mono text-[10px] font-bold">ACTION-409</span>
+<span class="px-2 py-0.5 rounded bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] text-[10px] font-semibold">Microelectronics</span>
+<span class="text-[#DC2626] font-mono text-[11px] font-bold flex items-center gap-1 bg-[#FEF2F2] px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[13px]">timer</span> Overdue by 48h
+                      </span>
+</div>
+<h4 class="text-[14px] font-bold text-[#101B33] mt-1.5 leading-snug">Approve €1.2M CapEx for Dual-Sourcing Tooling at Tavira Electronics</h4>
+<p class="text-[12px] text-slate-600 mt-1">
+                      Hexaprime cleanroom contamination risk (MCU-88) leaves EV Powertrain with 28-day inventory runway. Tavira validation line ready for commissioning.
+                    </p>
+<div class="mt-2.5 flex flex-wrap items-center gap-4 text-[12px] text-slate-500">
+<span>Owner: <strong class="text-[#101B33]">Marcus Vance (VP Category)</strong></span>
+<span>Revenue Saved: <strong class="text-[#059669] font-bold">€38.4M</strong></span>
+<span>Residual Risk Impact: <span class="text-[#059669] font-bold bg-[#ECFDF5] px-1.5 py-0.5 rounded border border-[#A7F3D0]">Score 24 → 6 (-75%)</span></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end lg:self-center">
+<button class="px-3.5 h-8 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-[#101B33] text-[12px] font-semibold transition-colors shadow-xs" type="button">
+                    Review Audit Brief
+                  </button>
+<button class="px-4 h-8 rounded-lg bg-[#176BCE] text-white text-[12px] font-semibold hover:bg-[#1357A6] transition-colors shadow-sm shadow-[#176BCE]/25 flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Authorize €1.2M</span>
+</button>
+</div>
+</div>
+<!-- Decision 2 -->
+<div class="p-4 rounded-xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#176BCE]/50 transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 max-w-3xl">
+<span class="w-1.5 self-stretch rounded-full bg-[#DC2626] shrink-0"></span>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] font-mono text-[10px] font-bold">ACTION-412</span>
+<span class="px-2 py-0.5 rounded bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] text-[10px] font-semibold">Battery Raw Materials</span>
+<span class="text-[#D97706] font-mono text-[11px] font-bold flex items-center gap-1 bg-[#FFFBEB] px-2 py-0.5 rounded border border-[#FEF3C7]">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 14h window remaining
+                      </span>
+</div>
+<h4 class="text-[14px] font-bold text-[#101B33] mt-1.5 leading-snug">Authorize 12-Week Strategic Buffer Buy for Cobalt Precursor (NMC 811)</h4>
+<p class="text-[12px] text-slate-600 mt-1">
+                      Nordvolt export quota signals indicate impending 30-day export freeze. Spot volume locked with Sundara Metals at +4.2% hedge index.
+                    </p>
+<div class="mt-2.5 flex flex-wrap items-center gap-4 text-[12px] text-slate-500">
+<span>Owner: <strong class="text-[#101B33]">Sylvia Chen (Lead Trader)</strong></span>
+<span>Committed Spend: <strong class="text-[#101B33] font-semibold">€4.8M</strong></span>
+<span>Buffer Impact: <span class="text-[#059669] font-bold bg-[#ECFDF5] px-1.5 py-0.5 rounded border border-[#A7F3D0]">+84 Days Coverage</span></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end lg:self-center">
+<button class="px-3.5 h-8 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-[#101B33] text-[12px] font-semibold transition-colors shadow-xs" type="button">
+                    Hedge Term Sheet
+                  </button>
+<button class="px-4 h-8 rounded-lg bg-[#176BCE] text-white text-[12px] font-semibold hover:bg-[#1357A6] transition-colors shadow-sm shadow-[#176BCE]/25 flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Execute Hedge</span>
+</button>
+</div>
+</div>
+<!-- Decision 3 -->
+<div class="p-4 rounded-xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#176BCE]/50 transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 max-w-3xl">
+<span class="w-1.5 self-stretch rounded-full bg-[#F59E0B] shrink-0"></span>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-[#FFFBEB] border border-[#FEF3C7] text-[#D97706] font-mono text-[10px] font-bold">ACTION-398</span>
+<span class="px-2 py-0.5 rounded bg-[#EAF3FC] text-[#176BCE] border border-[#D0E2FA] text-[10px] font-semibold">Polymers &amp; Resins</span>
+<span class="text-slate-500 font-mono text-[11px] font-medium">Due in 5 days</span>
+</div>
+<h4 class="text-[14px] font-bold text-[#101B33] mt-1.5 leading-snug">Escalate Forensic Insolvency Audit for Castellan Polymers SpA</h4>
+<p class="text-[12px] text-slate-600 mt-1">
+                      D&amp;B rating downgrade from 3A2 to 5A4 triggers mandatory on-site inventory escrow audit before disbursing Q4 advance milestones.
+                    </p>
+<div class="mt-2.5 flex flex-wrap items-center gap-4 text-[12px] text-slate-500">
+<span>Owner: <strong class="text-[#101B33]">Arnaud de Vries (Chief Legal &amp; Compliance)</strong></span>
+<span>Financial Bond: <strong class="text-[#101B33] font-semibold">€2.6M Escrow</strong></span>
+<span>Risk Status: <span class="text-[#D97706] font-bold bg-[#FFFBEB] px-1.5 py-0.5 rounded border border-[#FEF3C7]">Tier-2 Verification</span></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end lg:self-center">
+<button class="px-3.5 h-8 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-[#101B33] text-[12px] font-semibold transition-colors shadow-xs" type="button">
+                    Assign Legal Team
+                  </button>
+<button class="px-4 h-8 rounded-lg bg-white border border-[#DC2626]/30 hover:bg-[#FEF2F2] text-[#DC2626] text-[12px] font-semibold transition-colors shadow-xs flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>Freeze Milestone</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Critical Dependency Watchlist Table -->
+<section class="px-6 py-2">
+<div class="bg-white rounded-xl p-5 border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)]">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-[16px] font-bold text-[#101B33]">Critical Dependency Watchlist</h3>
+<span class="px-2 py-0.5 rounded-md bg-[#EAF3FC] font-mono text-[10px] text-[#176BCE] font-bold border border-[#D0E2FA]">SINGLE-SOURCE EXPOSURE</span>
+</div>
+<p class="text-[12px] text-slate-500 mt-0.5">Live telemetry tracking inventory coverage runway versus requalification replacement lead time</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-[#F5F8FC] border border-[#E0E7F1] hover:bg-white text-[#101B33] text-[12px] font-medium flex items-center gap-1.5 transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-[15px] text-[#176BCE]">filter_list</span> Filter Watchlist
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-[#F5F8FC] border border-[#E0E7F1] hover:bg-white text-[#101B33] text-[12px] font-medium flex items-center gap-1.5 transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-[15px] text-slate-500">download</span> Export CSV
+                </button>
+</div>
+</div>
+<!-- Modern Data Table -->
+<div class="overflow-x-auto rounded-lg border border-[#E0E7F1]">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-[#F8FAFD] border-b border-[#E0E7F1] text-slate-600 font-mono text-[10px] uppercase tracking-wider h-10">
+<th class="px-4 font-semibold">Supplier &amp; Location</th>
+<th class="px-3 font-semibold">Critical Material</th>
+<th class="px-3 font-semibold">Category</th>
+<th class="px-3 font-semibold">Business Unit</th>
+<th class="px-4 font-semibold min-w-[210px]">Coverage Runway vs. Qualification Gap</th>
+<th class="px-3 font-semibold">Financial Exposure</th>
+<th class="px-3 font-semibold">osapiens Signal</th>
+<th class="px-3 font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#E0E7F1] text-[12px]">
+<!-- Row 1: Nordvolt -->
+<tr class="hover:bg-[#EAF3FC]/30 transition-colors">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-bold text-[#101B33] flex items-center gap-1.5">
+                          Nordvolt Cells AB
+                          <span class="material-symbols-outlined text-[15px] text-[#DC2626]" title="Single Source Verified">verified</span>
+</span>
+<span class="font-mono text-[10px] text-slate-500">SE-SKL · Tier 1 Sole Source</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-semibold text-[#101B33]">NMC 811 Lithium Cathode</span>
+<span class="font-mono text-[10px] text-slate-400">SKU-BAT-9904</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2 py-0.5 rounded-full bg-[#F5F8FC] border border-[#E0E7F1] text-[11px] font-medium text-slate-700">Energy Storage</span>
+</td>
+<td class="px-3 py-3 font-medium text-slate-700">
+                      EV Mobility Platform
+                    </td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[11px]">
+<span class="text-[#DC2626] font-bold">4.2w Buffer</span>
+<span class="text-slate-500">Gap: 28w</span>
+</div>
+<div class="w-full bg-[#E2E8F0] h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#DC2626] h-full rounded-full" style="width: 15%" title="Current Inventory: 4.2 weeks"></div>
+</div>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-[#DC2626] text-[13px]">€48.2M</span>
+<span class="font-mono text-[10px] text-slate-500">€18.4M Spend</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444] animate-pulse"></span> Geopol: Export Alert
+                      </span>
+</td>
+<td class="px-3 py-3 text-right">
+<button class="p-1.5 hover:bg-[#EAF3FC] rounded-lg text-[#176BCE] transition-colors" title="Inspect Supplier Deep-Dive" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Hexaprime -->
+<tr class="hover:bg-[#EAF3FC]/30 transition-colors">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-bold text-[#101B33] flex items-center gap-1.5">
+                          Hexaprime Semiconductors
+                          <span class="material-symbols-outlined text-[15px] text-[#DC2626]">verified</span>
+</span>
+<span class="font-mono text-[10px] text-slate-500">TW-HSN · Dual-Source in Qual</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-semibold text-[#101B33]">Silicon Micro-Controllers MCU-88</span>
+<span class="font-mono text-[10px] text-slate-400">SKU-CHIP-4412</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2 py-0.5 rounded-full bg-[#F5F8FC] border border-[#E0E7F1] text-[11px] font-medium text-slate-700">Microelectronics</span>
+</td>
+<td class="px-3 py-3 font-medium text-slate-700">
+                      Autonomous Drive Systems
+                    </td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[11px]">
+<span class="text-[#DC2626] font-bold">3.8w Buffer</span>
+<span class="text-slate-500">Gap: 24w</span>
+</div>
+<div class="w-full bg-[#E2E8F0] h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#DC2626] h-full rounded-full" style="width: 13%"></div>
+</div>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-[#DC2626] text-[13px]">€38.4M</span>
+<span class="font-mono text-[10px] text-slate-500">€12.1M Spend</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FEF2F2] border border-[#FEE2E2] text-[#DC2626] text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#EF4444] animate-pulse"></span> Yield Cleanroom Alert
+                      </span>
+</td>
+<td class="px-3 py-3 text-right">
+<button class="p-1.5 hover:bg-[#EAF3FC] rounded-lg text-[#176BCE] transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Sundara Rare Metals -->
+<tr class="hover:bg-[#EAF3FC]/30 transition-colors">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-bold text-[#101B33] flex items-center gap-1.5">
+                          Sundara Rare Metals
+                        </span>
+<span class="font-mono text-[10px] text-slate-500">IN-ODS · Tier 2 Specialist</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-semibold text-[#101B33]">Neodymium Magnet Grade 48H</span>
+<span class="font-mono text-[10px] text-slate-400">SKU-MAG-0021</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2 py-0.5 rounded-full bg-[#F5F8FC] border border-[#E0E7F1] text-[11px] font-medium text-slate-700">Specialty Metallurgy</span>
+</td>
+<td class="px-3 py-3 font-medium text-slate-700">
+                      Drivetrain Electrics
+                    </td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[11px]">
+<span class="text-[#D97706] font-bold">5.5w Buffer</span>
+<span class="text-slate-500">Gap: 18w</span>
+</div>
+<div class="w-full bg-[#E2E8F0] h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#F59E0B] h-full rounded-full" style="width: 22%"></div>
+</div>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-[#101B33] text-[13px]">€16.2M</span>
+<span class="font-mono text-[10px] text-slate-500">€6.4M Spend</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FFFBEB] border border-[#FEF3C7] text-[#D97706] text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"></span> Quota License Delay
+                      </span>
+</td>
+<td class="px-3 py-3 text-right">
+<button class="p-1.5 hover:bg-[#EAF3FC] rounded-lg text-[#176BCE] transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Castellan Polymers SpA -->
+<tr class="hover:bg-[#EAF3FC]/30 transition-colors">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-bold text-[#101B33] flex items-center gap-1.5">
+                          Castellan Polymers SpA
+                        </span>
+<span class="font-mono text-[10px] text-slate-500">IT-MIL · Sole European Compounder</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-semibold text-[#101B33]">High-Impact PEEK Resins</span>
+<span class="font-mono text-[10px] text-slate-400">SKU-PLAS-1209</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2 py-0.5 rounded-full bg-[#F5F8FC] border border-[#E0E7F1] text-[11px] font-medium text-slate-700">Polymers</span>
+</td>
+<td class="px-3 py-3 font-medium text-slate-700">
+                      Chassis Structural Assemblies
+                    </td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[11px]">
+<span class="text-[#D97706] font-bold">5.8w Buffer</span>
+<span class="text-slate-500">Gap: 16w</span>
+</div>
+<div class="w-full bg-[#E2E8F0] h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#F59E0B] h-full rounded-full" style="width: 26%"></div>
+</div>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-[#101B33] text-[13px]">€9.7M</span>
+<span class="font-mono text-[10px] text-slate-500">€4.9M Spend</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FFFBEB] border border-[#FEF3C7] text-[#D97706] text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"></span> Credit Downgrade
+                      </span>
+</td>
+<td class="px-3 py-3 text-right">
+<button class="p-1.5 hover:bg-[#EAF3FC] rounded-lg text-[#176BCE] transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Tavira Electronics -->
+<tr class="hover:bg-[#EAF3FC]/30 transition-colors bg-[#F0FDF4]/30">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-bold text-[#101B33] flex items-center gap-1.5">
+                          Tavira Electronics
+                          <span class="material-symbols-outlined text-[15px] text-[#059669]">published_with_changes</span>
+</span>
+<span class="font-mono text-[10px] text-[#059669] font-medium">PT-PRT · Alternate Secondary Fast-Track</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-semibold text-[#101B33]">Automotive ECUs (Alt MCU-88)</span>
+<span class="font-mono text-[10px] text-slate-400">SKU-CHIP-4412-ALT</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2 py-0.5 rounded-full bg-[#F5F8FC] border border-[#E0E7F1] text-[11px] font-medium text-slate-700">Microelectronics</span>
+</td>
+<td class="px-3 py-3 font-medium text-slate-700">
+                      Autonomous Drive Systems
+                    </td>
+<td class="px-4 py-3">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-mono text-[11px]">
+<span class="text-[#059669] font-bold">Ramping (9w to Pilot)</span>
+<span class="text-slate-500">On-Schedule</span>
+</div>
+<div class="w-full bg-[#E2E8F0] h-2 rounded-full overflow-hidden flex">
+<div class="bg-[#10B981] h-full rounded-full" style="width: 72%"></div>
+</div>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-[#059669] text-[13px]">Mitigates €38.4M</span>
+<span class="font-mono text-[10px] text-slate-500">€1.2M CapEx Req</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#ECFDF5] border border-[#D1FAE5] text-[#059669] text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span> Pilot Run Clear
+                      </span>
+</td>
+<td class="px-3 py-3 text-right">
+<button class="p-1.5 hover:bg-[#EAF3FC] rounded-lg text-[#176BCE] transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">open_in_new</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer -->
+<div class="mt-3.5 pt-3 border-t border-[#E0E7F1] flex flex-wrap items-center justify-between gap-3 text-[12px] text-slate-500">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-[#101B33]">5 of 14</strong> active single-source bottlenecks</span>
+<span class="text-slate-300">·</span>
+<span>Buffer definition: Days to halt line assuming zero inbound receipts</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-[11px]">
+<span class="text-slate-500">Next Audit Cycle: in 4d 06h</span>
+<a class="text-[#176BCE] hover:underline font-bold ml-2 inline-flex items-center gap-0.5" href="#">
+<span>View Full Dependency Registry</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Methodology Transparency Drawer / Executive Guidance Strip -->
+<section class="px-6 py-2">
+<div class="p-4 rounded-xl bg-white border border-[#E0E7F1] shadow-[0_2px_12px_rgba(16,27,51,0.04)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-[#EAF3FC] border border-[#D0E2FA] flex items-center justify-center text-[#176BCE] shadow-xs">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<h5 class="text-[14px] font-bold text-[#101B33]">15M Risk Intelligence Engine Governance</h5>
+<p class="text-[12px] text-slate-500 mt-0.5">
+                  Residual Risk score calculated using live ERP inventory runs, multi-tier bill-of-materials explosion, and osapiens automated early-warning telemetry.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-mono text-[11px] text-slate-500 bg-[#F5F8FC] border border-[#E0E7F1] px-2.5 py-1 rounded-md">ISO 31000 / BAFA CSDDD Compliant</span>
+<button class="px-3.5 h-8 rounded-lg bg-white border border-[#E0E7F1] hover:bg-[#F5F8FC] text-[#101B33] text-[12px] font-semibold transition-colors shadow-xs" type="button">
+                Export Audit Package
+              </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</body></html>

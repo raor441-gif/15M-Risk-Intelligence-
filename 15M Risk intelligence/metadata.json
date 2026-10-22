@@ -1,0 +1,6 @@
+{
+  "name": "Sourcing Champions · 15M Risk Intelligence Hub",
+  "description": "Enterprise procurement risk intelligence, real-time supplier exposure telemetry, 15M methodology matrix, and CPO decision command center.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

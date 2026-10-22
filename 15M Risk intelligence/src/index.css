@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  /* DIN Pro font stack with local aliases and Google Barlow DIN geometric equivalent */
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DIN Pro', 'DINPro', 'DIN-Pro', 'DIN 2014', 'DIN Alternate', 'Barlow', 'Barlow Semi Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F4F8FA;
+    color: #0A192A;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DIN Pro', 'DINPro', 'DIN-Pro', 'DIN 2014', 'DIN Alternate', 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    letter-spacing: -0.015em;
+  }
+
+  /* Tabular lining figures for numbers, currency, timestamps */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Custom scrollbars matching whitepaper palette */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(10, 25, 42, 0.02);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 132, 168, 0.25);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 132, 168, 0.45);
+  }
+}
+
+/* White Paper Dynamic Mesh Background */
+.mesh-background {
+  background-color: #F4F8FA;
+  background-image: 
+    radial-gradient(at 12% 8%, rgba(0, 166, 204, 0.07) 0px, transparent 40%),
+    radial-gradient(at 88% 14%, rgba(2, 89, 123, 0.08) 0px, transparent 45%),
+    radial-gradient(at 50% 80%, rgba(25, 182, 164, 0.05) 0px, transparent 55%),
+    linear-gradient(rgba(215, 230, 238, 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215, 230, 238, 0.45) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Smooth Dynamic Background Keyframes */
+@keyframes drift-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(35px, -25px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-20px, 20px) scale(0.95);
+    opacity: 0.85;
+  }
+}
+
+@keyframes drift-reverse {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-40px, 30px) scale(1.15);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(25px, -20px) scale(0.92);
+    opacity: 0.75;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(0.96);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.9;
+  }
+}
+
+@keyframes sweep-subtle {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-drift-slow {
+  animation: drift-slow 18s ease-in-out infinite alternate;
+}
+
+.animate-drift-reverse {
+  animation: drift-reverse 22s ease-in-out infinite alternate;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 14s ease-in-out infinite alternate;
+}
+
+.animate-sweep-subtle {
+  animation: sweep-subtle 28s linear infinite;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift-slow,
+  .animate-drift-reverse,
+  .animate-pulse-slow,
+  .animate-sweep-subtle {
+    animation: none !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .responsive-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Bulletproof text gradient utility for high-DPI and cross-browser rendering */
+.text-gradient-cyan {
+  background-image: linear-gradient(90deg, #00D2FF 0%, #00A6CC 50%, #19B6A4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #00D2FF;
+  display: inline-block;
+}
+
